@@ -1,10 +1,43 @@
 body {
     display: flex;
     justify-content: center;
+    background-color: #24273a;
 }
 
 h1 {
     text-align: center;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: #7dc4e4;
+    font-weight: 400;
+}
+
+.reboot {
+    font: inherit;
+    cursor: pointer;
+    background: none;
+    border: none;
+    display: inline-flex;
+  align-items: center;
+  padding: 12px 28px;
+  border-radius: 8px;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  font-size: 18px;
+  font-weight: 200;
+  color: #24273a;
+  text-decoration: none;
+  background:  #7dc4e4;
+  transition: transform 0.18s ease, background 0.18s ease, box-shadow 0.18s ease;
+  -webkit-font-smoothing: antialiased;
+}
+
+.reboot:hover {
+  background: #7dc4e4	;
+  transform: translateY(-2px);
+}
+
+.reboot:active {
+  transform: scale(0.97);
+  background: #7dc4e4	;
 }
 
 .containers {
@@ -21,9 +54,10 @@ h1 {
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(3, 1fr);
   border: 1px solid black;
+  border-radius: 10px;
   gap: 2px;
   padding: 2px;
-  background-color: yellow;
+  background-color: #6e738d	;
 }
 
 .cell {
@@ -33,17 +67,6 @@ h1 {
   text-align: center;
   font-size: 2rem;
   border: 1px solid grey;
-  background: lightyellow;
+  background: #b8c0e0	;
   cursor: pointer;
-}
-
-.reboot {
-    display: flex;
-    width: 60px;
-    height: 40px;
-    background-color: brown;
-    justify-content: center;
-    align-items: center;
-    cursor: pointer;
-    border-radius: 5px;
 }
